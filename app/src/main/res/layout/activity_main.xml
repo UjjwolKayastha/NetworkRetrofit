@@ -62,5 +62,28 @@
         </TableRow>
 
 
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter your Id here"/>
+
+        <TextView android:id="@+id/indiEmp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="EMPLOYEE" />
+
+        <Button
+            android:id="@+id/btnshow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHOW EMPLOYEE"/>
+
+
     </TableLayout>
+
+
+
 </ScrollView>
+

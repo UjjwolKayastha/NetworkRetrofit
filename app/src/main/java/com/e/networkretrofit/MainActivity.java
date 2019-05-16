@@ -1,5 +1,6 @@
 package com.e.networkretrofit;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     TextView name, age, salary, empnamenew;
     EditText etId;
-    Button btnshow;
+    Button btnshow, regactivity;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         empnamenew = findViewById(R.id.indiEmp);
         etId = findViewById(R.id.id);
         btnshow = findViewById(R.id.btnshow);
+        regactivity = findViewById(R.id.regactivity);
 
 
         btnshow.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
         });
 
 //        RetBuild();
+
+        regactivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), Register.class));
+            }
+        });
 
     }
 

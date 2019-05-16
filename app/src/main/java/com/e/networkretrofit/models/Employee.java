@@ -12,6 +12,12 @@ public class Employee {
         this.profile_image = profile_image;
     }
 
+    public Employee(String employee_name, String employee_age, String employee_salary) {
+        this.employee_name = employee_name;
+        this.employee_age = employee_age;
+        this.employee_salary = employee_salary;
+    }
+
     public String getId() {
         return id;
     }
